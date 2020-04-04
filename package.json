@@ -2,13 +2,12 @@
   "name": "koa2pro",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "start": "node bin/www",
-    "dev": "./node_modules/.bin/nodemon bin/www",
-    "prod": "pm2 start bin/www -i 4",
+    "start": "node index.js",
+    "dev": "./node_modules/.bin/nodemon index.js",
+    "prod": "pm2 start index.js -i 4",
     "test": "./node_modules/.bin/mocha",
-    "sync_database": "node model/sync.js"
+    "sync_database": "node sync_database.js"
   },
   "dependencies": {
     "debug": "^4.1.1",
@@ -34,6 +33,16 @@
   },
   "devDependencies": {
     "mocha": "^7.0.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "babel": "^6.23.0",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "babel-register": "^6.24.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-classes": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
+    "babel-plugin-transform-export-extensions": "^6.22.0"
   }
 }

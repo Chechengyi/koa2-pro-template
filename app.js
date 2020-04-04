@@ -9,13 +9,14 @@ import index from './routes/index'
 import users from './routes/users'
 import video from './routes/video'
 import cors from 'koa2-cors'
+import KoaBody from 'koa-body'
+import tokenConfirm from './middle/tokenConfirm'
+import fetch from 'node-fetch'
+import { accessLogger, systemLogger, } from './middle/logger'
+
 
 const app = new Koa();
-const KoaBody = require('koa-body');
-const tokenConfirm = require('./middle/tokenConfirm');
 
-const { accessLogger, systemLogger, } = require('./middle/logger');
-const fetch = require('node-fetch')
 
 const isDev = process.env.npm_lifecycle_event === 'dev';
 

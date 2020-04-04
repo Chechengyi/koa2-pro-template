@@ -1,10 +1,12 @@
-import router from 'koa-router'
+import Router from 'koa-router'
 import fs from 'fs'
 import result from '../result'
 import path from 'path'
 import conf from '../config/conf'
 
 const port = conf.port;
+
+let router = new Router()
 
 router.get('/', async (ctx, next) => {
   ctx.body = 'hello world';

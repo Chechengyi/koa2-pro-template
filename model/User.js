@@ -2,9 +2,9 @@
  * @description 用户表
  */
 
-const Sequelize = require("sequelize");
-const sequelize = require('../config/db');
-const uuid = require('node-uuid');
+import Sequelize from "sequelize"
+import sequelize from '../config/db'
+import uuid from 'node-uuid'
 
 const User = sequelize.define('users', {
     id: {
@@ -35,4 +35,4 @@ const User = sequelize.define('users', {
 //     alter : true
 // });
 
-module.exports = User;
+export default User;

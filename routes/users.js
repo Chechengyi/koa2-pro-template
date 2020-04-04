@@ -1,7 +1,9 @@
-import router from 'koa-router';
+import Router from 'koa-router';
 import User from '../controller/user/User';
 
-router.prefix('users');
+let router = new Router();
+
+router.prefix('/users');
 
 router.post('/login', User.login);
 router.get('/userInfo', User.userInfo);

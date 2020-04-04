@@ -1,7 +1,7 @@
-const result = require('../result');
+import result from '../result'
 
-module.exports = ()=>{
-  return function(ctx, next){
+export default function () {
+  return function (ctx, next) {
     return next().catch((err) => {
       if (401 == err.status) {
         // ctx.status = 401;

@@ -1,5 +1,5 @@
-const Sequelize = require("sequelize");
-const conf = require('./conf');
+import Sequelize from "sequelize"
+import conf from './conf'
 const isDev = process.env.npm_lifecycle_event === 'dev';
 const dbConf = isDev && conf.devDb || conf.proDb;
 
@@ -69,4 +69,4 @@ sequelize
     console.error('Unable to connect to the database:', err);
   });
 
-module.exports = sequelize;
+export default sequelize;

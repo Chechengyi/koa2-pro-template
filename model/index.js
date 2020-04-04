@@ -1,7 +1,7 @@
-const User = require('./User');
-const Role = require('./Role');
-const Permission = require('./Permission');
-const UserRole = require('./UserRole');
+import User from './User'
+import Role from './Role'
+import Permission from './Permission'
+import UserRole from './UserRole'
 
 
 // 建立外键关系
@@ -16,7 +16,7 @@ Role.belongsToMany(User, {
     foreignKey: 'role_id'
 });
 
-module.exports = {
+export default {
     User,
     Role,
     Permission,

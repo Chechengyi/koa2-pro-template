@@ -2,7 +2,7 @@
  * @description 检查用户权限
  */
 
-module.exports = function (permissionName) {
+export default function (permissionName) {
   return function (ctx, next) {
 
   }

@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     devDb: {
         database: 'test',
         username: 'root',

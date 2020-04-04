@@ -2,8 +2,8 @@
  * @description 用户角色表
  */
 
-const Sequelize = require("sequelize");
-const sequelize = require('../config/db');
+import Sequelize from "sequelize"
+import sequelize from '../config/db'
 
 const UserRole = sequelize.define('user_role', {
   id: {
@@ -17,4 +17,4 @@ const UserRole = sequelize.define('user_role', {
   timestamps: false
 });
 
-module.exports = UserRole;
+export default UserRole;

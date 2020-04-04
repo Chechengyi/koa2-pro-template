@@ -4,7 +4,7 @@ const ERROR = 2; //失败
 const ERROR_TEXT = '接口异常';
 const NO_LOGIN = 3;  // 未登录
 
-module.exports = {
+export default {
     success: function (ctx, arg1, arg2) {
         if (arguments.length === 1) {
             arg1 = SUCCESS_TEXT;

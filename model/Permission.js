@@ -2,8 +2,8 @@
  * 权限表
  */
 
-const Sequelize = require("sequelize");
-const sequelize = require('../config/db');
+import Sequelize from "sequelize"
+import sequelize from '../config/db'
 
 const Permission = sequelize.define('permission', {
   id: {
@@ -27,5 +27,5 @@ const Permission = sequelize.define('permission', {
   timestamps: false
 });
 
-module.exports = Permission;
+export default Permission;
 

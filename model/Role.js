@@ -2,8 +2,8 @@
  * @description 角色表
  */
 
-const Sequelize = require("sequelize");
-const sequelize = require('../config/db');
+import Sequelize from "sequelize"
+import sequelize from '../config/db'
 
 const Role = sequelize.define('role', {
   id: {
@@ -15,4 +15,4 @@ const Role = sequelize.define('role', {
 }, {
 });
 
-module.exports = Role;
+export default Role;

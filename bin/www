@@ -4,16 +4,20 @@
  * Module dependencies.
  */
 
-var app = require('../app');
-var debug = require('debug')('demo:server');
-var http = require('http');
-var port = require('../config/conf').port;
+import app from '../app'
+import debugServer from 'debug'
+import http from 'http'
+import conf from '../config/conf';
 
+
+
+let debug = debugServer('demo:server');
+let conf_port = conf.port;
 /**
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(port || process.env.PORT || '8888');
+var port = normalizePort(conf_port || process.env.PORT || '8888');
 // app.set('port', port);
 
 /**
