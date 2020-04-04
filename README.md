@@ -3,10 +3,9 @@
 ## 项目运行（nodejs 7.0+）
 ``` bash
 # 克隆到本地
-git clone https://github.com/qinkangwu/koa2-mysql-sequelize-boilerplate.git koa2Pro
-
+git clone https://github.com/Chechengyi/koa2-pro-template.git
 # 进入文件夹
-cd koa2Pro
+cd koa2-pro-template
 
 # 安装依赖
 npm i || yarn install
