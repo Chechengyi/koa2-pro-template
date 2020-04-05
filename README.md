@@ -16,3 +16,8 @@ npm run dev || yarn dev
 # 发布环境
 npm run prod || yarn prod
 ```
+
+# 同步数据库表
+```
+npm run sync_database
+```

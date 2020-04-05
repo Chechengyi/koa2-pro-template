@@ -7,7 +7,7 @@ import seq from "../config/db"
 import model from './index'
 
 seq.sync({
-  force: true,
+  force: false,
   alter: true
 });
 
