@@ -1,10 +1,21 @@
 {
   "presets": [
-    "stage-3"
+    "@babel/preset-env"
   ],
   "plugins": [
-    "transform-async-to-generator",
-    "transform-es2015-modules-commonjs",
-    "transform-export-extensions"
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-syntax-dynamic-import",
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ]
   ]
 }

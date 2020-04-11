@@ -1,2 +1,2 @@
-require('babel-core/register');
-require('./bin/www');
+require('@babel/register');
+require('./bin/app');
