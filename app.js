@@ -48,6 +48,7 @@ app
     secret: conf.jwtSecret
   }).unless({
     path: [
+      /^\/*/,
       /^\/users\/login/,
       /^\/users\/register/,
       /^\/users\/checkUsername/,

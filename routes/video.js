@@ -38,4 +38,4 @@ router.get('/get', async (ctx, next) => {
   ctx.body = fs.createReadStream(filePath, { start, end });
 })
 
-module.exports = router
+export default router
